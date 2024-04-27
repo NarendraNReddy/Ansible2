@@ -1,7 +1,11 @@
 - name: variables
   hosts: web
+  vars:
+    Course: DevOps
+    Trainer: Siva
+    Duration: 120hrs
   become: no
   tasks:
   - name: Variables declaration
     ansible.builtin.debug:
-      msg: "Learning Devops with Siva for 120 hours"
+      msg: "Learning {{Course}} with {{Trainer}} for {{Duration}}"
