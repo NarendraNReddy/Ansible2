@@ -1,7 +1,11 @@
 - name: var pre check
   hosts: localhost
-  vars:
-  - WISHES: "Play level:GM"
+  # vars:
+  # - WISHES: "Play level:GM"
+  # vars_prompt:
+  #   name: WISHES
+  #   prompt: "Enter wishes from prompt format: prompt GM"
+  #   private: false
   vars_file:
   - vars.yaml
   become: no
