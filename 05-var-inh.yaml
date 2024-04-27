@@ -1,0 +1,11 @@
+- name: Variables Inheritance overriding
+  hosts: localhost
+  vars:
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "120hrs"
+  become: no
+  tasks:
+  - name: tasklevel Overrding
+    ansible.builtin.debug:
+      msg: "{{Course}} {{Trainer}} {{Duration}}"
