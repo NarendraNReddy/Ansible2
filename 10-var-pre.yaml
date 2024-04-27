@@ -1,3 +1,4 @@
 - name: var pre check
-  hostname: localhost
+  hosts: localhost
+  
 
