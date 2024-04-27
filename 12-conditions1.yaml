@@ -1,6 +1,13 @@
 - name: id expense check
   hosts: web
   become: yes
+  tasks:
+  - name: id check
+    ansible.builtin.command:  id expense
+
+  - name: print hello
+    ansible.builtin.debug:
+      msg:  "Hello"  
 
 
 
