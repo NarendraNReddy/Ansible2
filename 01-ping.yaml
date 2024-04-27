@@ -1,7 +1,6 @@
 - name: ping the server1
   hosts: web
-  become: no
+  become: yes
   tasks:
   - name: Pinging the server2
     ansible.builtin.ping:
-      
