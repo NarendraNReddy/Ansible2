@@ -3,7 +3,7 @@
   vars:
   - WISHES: "Play level:GM"
   vars_prompt:
-  - name: WISHES
+    name: WISHES
     prompt: "Enter wishes from prompt format: prompt GM"
     private: false
   vars_file:
