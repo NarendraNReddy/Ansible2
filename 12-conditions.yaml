@@ -1,0 +1,17 @@
+- name: Conditions
+  hosts: web
+  become: yes
+  tasks:
+  - name: id expense task
+    ansible.builtin.command:  id expense
+    ignore_errors: true
+    register: USER
+
+  - name: user information
+    ansible.builtin.debug:
+      msg: "{{USER}}"
+
+
+
+  
+  
