@@ -5,6 +5,7 @@
   - name: id expense task
     ansible.builtin.command:  id expense
     register: USER
+    ignore_errors: true
 
   - name: Hello
     ansible.builtin.debug:
