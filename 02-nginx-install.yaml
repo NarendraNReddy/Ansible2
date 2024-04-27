@@ -1,0 +1,13 @@
+- name: install nginx1
+  host: web
+  become: yes
+  tasks:
+  - name: Install nginx2
+    ansible.builtin.install:
+      name: ansible
+      state: latest
+  - name: start nginix
+    ansible.builtin.service:
+      name: nginx1
+      state: installed
+      enable: yes     
