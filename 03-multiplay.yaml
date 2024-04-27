@@ -1,0 +1,7 @@
+- name: Play1
+  hosts: web
+  become: no
+  tasks:
+  - name: multilevel
+    ansible.builtin.debug:
+      msg: "Hi , how are you"
