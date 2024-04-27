@@ -2,7 +2,7 @@
   hosts: localhost
   become: no
   vars_files:
-    vars.yaml 
+  - vars.yaml 
   tasks:
   - name: variables with files
     ansible.builtin.debug:
