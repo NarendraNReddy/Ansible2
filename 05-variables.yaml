@@ -1,0 +1,19 @@
+- name: varibles
+  hosts: localhost
+  become: no
+  vars:
+    Course: "Terraform"
+    Trainer: "Siva"
+    Duration: "120hrs"
+  tasks:
+  - name: Overriding check
+    vars:
+      Course: "Devops"
+      ansible.builtin.debug:
+        msg: "Override Devops: {{Course}} {{Trainer}} {{Durtion}}"
+  - name: Inheritance
+    ansible.builtin.debug:
+      msg: "Inheritance Terraform: {{Course}} {{Trainer}} {{Duration}}"
+
+
+               

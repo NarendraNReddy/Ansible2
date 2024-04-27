@@ -9,3 +9,4 @@
   - name: Variables declaration
     ansible.builtin.debug:
       msg: "Learning {{Course}} with {{Trainer}} for {{Duration}}"
+      
