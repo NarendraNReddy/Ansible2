@@ -4,6 +4,14 @@
   tasks:
   - name: id check
     ansible.builtin.command:  id expense
+    register: USER
+    ignore_errors: false
+
+  - name: 
+    ansible.builtin.debug:
+      msg:  "$USER"  
+
+
 
   - name: print hello
     ansible.builtin.debug:
