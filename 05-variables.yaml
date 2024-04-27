@@ -12,7 +12,7 @@
     ansible.builtin.debug:
       msg: "Override DevOps: {{Course}} {{Trainer}} {{Duration}}"
   - name: Inheritance check
-    ansible.butiltin.debug:
+    ansible.builtin.debug:
       msg: "Inheritance Terraform: {{Course}} {{Trainer}} {{Duration}}"      
   # - name: Overriding check
   #   vars:
