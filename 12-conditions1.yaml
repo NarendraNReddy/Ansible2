@@ -1,5 +1,5 @@
-- name: Conditions
-  hostname: web
+- name: id expense check
+  hosts: web
   become: yes
 
 
