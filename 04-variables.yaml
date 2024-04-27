@@ -1,9 +1,9 @@
 - name: variables
   hosts: web
   vars:
-    Course: DevOps
-    Trainer: Siva
-    Duration: 120hrs
+    Course: "DevOps"
+    Trainer: "Siva"
+    Duration: "120hrs"
   become: no
   tasks:
   - name: Variables declaration
