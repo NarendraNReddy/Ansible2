@@ -1,9 +1,9 @@
 - name: variables
   hosts: localhost
   vars:
-    Course: "DevOps"
-    Trainer: "Siva"
-    Duration: "120hrs"
+    Course: "Terraform"
+    Trainer: "Sivakumar"
+    Duration: "15hrs"
   become: no
   tasks:
   - name: Variables declaration
