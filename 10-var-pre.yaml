@@ -3,8 +3,8 @@
   become: no 
   vars:
   - WISHES: "Playlevel GM"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
   - name: WISHES
     prompt: "from Prompt: GM"
