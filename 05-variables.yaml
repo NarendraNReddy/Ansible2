@@ -8,9 +8,14 @@
   tasks:
   - name: Overriding check
     vars:
-      Course: "Devops"
-      ansible.builtin.debug:
-        msg: "Override Devops: {{Course}} {{Trainer}} {{Durtion}}"
+      Course: "DevOps"
+    ansible.builtin.debug:
+      msg: "Override DevOps: {{Course}} {{Trainer}} {{Duration}}"  
+  # - name: Overriding check
+  #   vars:
+  #     Course: "Devops"
+  #     ansible.builtin.debug:
+  #       msg: "Override Devops: {{Course}} {{Trainer}} {{Durtion}}"
   # - name: Inheritance
   #   ansible.builtin.debug:
   #     msg: "Inheritance Terraform: {{Course}} {{Trainer}} {{Duration}}"
