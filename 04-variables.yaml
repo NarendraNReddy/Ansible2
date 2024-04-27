@@ -1,7 +1,7 @@
 - name: variables
   hosts: localhost
   vars:
-    Course: "Terraform"
+  - Course: "Terraform"
     Trainer: "Sivakumar"
     Duration: "15hrs"
   become: no
