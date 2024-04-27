@@ -5,10 +5,10 @@
   - WISHES: "Playlevel GM"
   # vars_files:
   # - vars.yaml
-  vars_prompt:
-  - name: WISHES
-    prompt: "from Prompt: GM"
-    private: false
+  # vars_prompt:
+  # - name: WISHES
+  #   prompt: "from Prompt: GM"
+  #   private: false
   tasks:
   - name: Task level
     # vars:
