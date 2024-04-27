@@ -4,4 +4,11 @@
   tasks:
   - name: Play1 Level1
     ansible.builtin.debug:
-      msg: "Hi , how are you"
+      msg: "Play 1 Level1"
+- name: Play2
+  hosts: localhost
+  become: no
+  tasks:
+  - name: Play2 Level2
+    ansible.builtin.debug:
+      mssg: "Play 2 Level 1"      
