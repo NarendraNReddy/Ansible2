@@ -15,5 +15,5 @@
   tasks:
   - name: print Datatypes
     ansible.builtin.debug:
-      msg: "{Course} {Tools} {Experiance} {RealProject}"
+      msg: "{{Course}} {{Tools}} {{Experiance}} {{RealProject}}"
 
