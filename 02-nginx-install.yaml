@@ -3,7 +3,7 @@
   become: no
   tasks:
   - name: install nginx
-    ansible.builtin.apt:
+    ansible.builtin.dnf:
       name: nginx
       state: latest
   
