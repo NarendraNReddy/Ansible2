@@ -1,7 +1,7 @@
 - name: Play1
-  hosts: web
+  hosts: localhost
   become: no
   tasks:
-  - name: multilevel
+  - name: Play1 Level1
     ansible.builtin.debug:
       msg: "Hi , how are you"
