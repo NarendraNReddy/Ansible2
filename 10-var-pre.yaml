@@ -2,11 +2,10 @@
   hosts: localhost
   vars:
   - WISHES: "Play level:GM"
-  vars_promt:
+  vars_prompt:
   - name: WISHES
     prompt: "Enter wishes from prompt format: prompt GM"
     private: false
-
   vars_file:
   - vars.yaml
   become: no
