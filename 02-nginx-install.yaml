@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Install nginx2
-    ansible.builtin.install:
+    ansible.builtin.dnf:
       name: ansible
       state: latest
   - name: start nginix
@@ -11,3 +11,5 @@
       name: nginx1
       state: started
       enable: yes     
+
+
