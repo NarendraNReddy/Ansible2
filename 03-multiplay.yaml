@@ -1,12 +1,12 @@
 - name: Play1
-  hosts: localhost
+  hosts: web
   become: no
   tasks:
   - name: Play1 Level1
     ansible.builtin.debug:
       msg: "Play 1 Level1"
 - name: Play2
-  hosts: localhost
+  hosts: web
   become: no
   tasks:
   - name: Play2 Level2
