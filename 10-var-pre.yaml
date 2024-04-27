@@ -14,7 +14,8 @@
     vars:
     - WISHES: "Tasklevel GM"
     ansible.builtin.debug:
-      msg: "{{WISHES}}""
+      msg:  "{{WISHES}}"
+
 
   
 
