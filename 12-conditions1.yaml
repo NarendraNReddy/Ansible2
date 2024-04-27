@@ -4,16 +4,16 @@
   tasks:
   - name: id check
     ansible.builtin.command:  id expense1
-    register: USER
-    ignore_errors: true
+  #   register: USER
+  #   ignore_errors: true
 
-  - name: 
-    ansible.builtin.debug:
-      msg:  "{{USER}}"  
+  # - name: 
+  #   ansible.builtin.debug:
+  #     msg:  "{{USER}}"  
 
-  - name:
-    ansible.builtin.command:  useradd expense1
-    when: USER.rc  !=  0    
+  # - name:
+  #   ansible.builtin.command:  useradd expense1
+  #   when: USER.rc  !=  0    
 
 
 
