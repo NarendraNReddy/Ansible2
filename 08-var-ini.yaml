@@ -4,4 +4,4 @@
   tasks:
   - name: 08 var from ini
     ansible.builtin.debug:
-      msg:  "{{Course}} {{Trainer}} {{Duration}}"
+      msg:  "{{Course}} {{Trainer}} {{Duration}} {{TIMINGS}}"
