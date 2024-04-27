@@ -1,0 +1,7 @@
+- name: vr with cmd line
+  hosts: localhost
+  become: no
+  tasks:
+  - name: "var with command line:"
+    ansible.builtin.debug:
+      msg: "{{PERSON}} {{WISHES}}" 
