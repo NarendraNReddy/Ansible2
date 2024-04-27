@@ -4,8 +4,8 @@
   tasks:
   - name: id check
     ansible.builtin.command:  id expense2
-  #   register: USER
-  #   ignore_errors: true
+    register: USER
+    ignore_errors: true
 
   # - name: 
   #   ansible.builtin.debug:
