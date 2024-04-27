@@ -1,0 +1,7 @@
+- name: 08 var from ini
+  hosts: localhost
+  become: no
+  tasks:
+  - name: 08 var from ini
+    ansible.builtin.debug:
+      msg:  "{{Course}} {{Trainer}} {{Duration}}"
