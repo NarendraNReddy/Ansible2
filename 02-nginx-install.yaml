@@ -8,9 +8,11 @@
       state: latest
   - name: start nginx
     ansible.builtin.service:
-      name: nginx
-      state: started
+    - name: nginx
+      state: installed
       enabled: yes
+
+
 
   
 
