@@ -7,9 +7,9 @@
     register: USER
     ignore_errors: true
 
-  # - name: 
-  #   ansible.builtin.debug:
-  #     msg:  "{{USER}}"  
+  - name: 
+    ansible.builtin.debug:
+      msg:  "{{USER}}"  
 
   # - name:
   #   ansible.builtin.command:  useradd expense1
