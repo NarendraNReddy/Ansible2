@@ -3,5 +3,7 @@
   become: no
   tasks:
   - name: 08 var from ini
+    vars: 
+      TIMINGS:  "10.45 am"
     ansible.builtin.debug:
       msg:  "{{Course}} {{Trainer}} {{Duration}} {{TIMINGS}}"
