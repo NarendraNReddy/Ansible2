@@ -1,0 +1,10 @@
+- name: Variables with files
+  hosts: localhost
+  become: no
+  vars_files:
+    vars.yaml 
+  tasks:
+  - name: variables with files
+    ansible.builtin.debug:
+      msg: "Var with files:{{Course}} {{Trainer}} {{Duration}}"  
+
