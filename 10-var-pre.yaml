@@ -11,8 +11,8 @@
     private: false
   tasks:
   - name: Task level
-    vars:
-    - WISHES: "Tasklevel GM"
+    # vars:
+    # - WISHES: "Tasklevel GM"
     ansible.builtin.debug:
       msg:  "{{WISHES}}"
 
