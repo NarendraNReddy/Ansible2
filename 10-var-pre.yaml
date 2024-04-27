@@ -1,8 +1,8 @@
 - name: var pre check
   hosts: localhost
   become: no 
-  vars:
-  - WISHES: "Playlevel GM"
+  # vars:
+  # - WISHES: "Playlevel GM"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
