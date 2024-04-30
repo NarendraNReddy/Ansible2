@@ -26,3 +26,15 @@
     ansible.builtin.debug:
       msg: "{{greetings | lower}}"
 
+- name: unique numbers
+  hosts: localhost
+  become: no
+  vars:
+  - numbers: [10,20,30,40,50]
+  tasks:
+  - name: "Hello"
+    ansible.builtin.debug:
+      msg: "{{numbers}}" 
+
+
+
