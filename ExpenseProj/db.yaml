@@ -1,6 +1,11 @@
 - name: DB
   hosts: localhost
   become: yes
+  vars_prompt:
+  - name: DB_PASSWORD
+    prompt: "Pls enter db password:::"
+    private: no
+
   tasks:
   - name: install mysql-server
     ansible.builtin.dnf:
@@ -11,4 +16,20 @@
       name: mysqld
       state: started
       enabled: yes
+  - name: ms sql root password set
+    community.mysql.mysql_info:
+      login_user: root
+      login_password: "{{DB_PASSWORD}}"
+      filter: version
+    ignore_errors: yes
+    register: mysql_connection_output
+
+  - name: print connection output
+    ansible.builtin.debug:
+      msg: "{{mysql_connection_output}}""
+
+       
+      
+
+
 
