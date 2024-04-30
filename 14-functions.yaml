@@ -1,5 +1,5 @@
 - name: fun check
-  hosts: hostname
+  hosts: localhost
   become: no
   tasks:
   - name: var check
