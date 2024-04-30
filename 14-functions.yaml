@@ -1,0 +1,7 @@
+- name: fun check
+  hosts: hostname
+  become: no
+  tasks:
+  - name: var check
+    ansible.builtin.debug:
+      msg: "{{message}}"
