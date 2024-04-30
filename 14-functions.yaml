@@ -5,3 +5,13 @@
   - name: var check
     ansible.builtin.debug:
       msg: "{{message | default('NNR is great')}}"
+
+- name: upper case
+  hosts: localhost
+  become: no 
+  vars:
+    greetings: "Hi , nnr is good boy in the world"
+  tasks:
+  - name: upper case check
+    ansible.builtin.debug:
+      msg: "{{greetings | upper}}"
