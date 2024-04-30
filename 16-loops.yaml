@@ -5,7 +5,7 @@
   - name: Loop test
     ansible.builtin.dnf:
       name: {{item}}
-      state: latest
+      state: {{latest}}
     loop:
     - mysql
     - nginx
