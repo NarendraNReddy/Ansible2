@@ -58,6 +58,9 @@
   - name: print list2item
     ansible.builtin.debug:
       msg: "Before the dict:{{mydict}}"  
+  - name: after item
+    ansible.builtin.debug:
+      msg: "After the dict:{{mydict.dict2items}}"    
 
 
 
