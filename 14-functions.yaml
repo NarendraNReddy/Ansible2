@@ -4,4 +4,4 @@
   tasks:
   - name: var check
     ansible.builtin.debug:
-      msg: "{{message}}"
+      msg: "{{message | default('NNR is great')}}"
