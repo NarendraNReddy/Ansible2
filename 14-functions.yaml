@@ -51,9 +51,9 @@
   become: no 
   vars:
     mydict:
-    - Course: Devops
-    - Training: Siva
-    - Duration: 120hours
+      Course: Devops
+      Training: Siva
+      Duration: 120hours
   tasks:
   - name: print list2item
     ansible.builtin.debug:
