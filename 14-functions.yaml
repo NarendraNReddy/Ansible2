@@ -77,7 +77,7 @@
 
   - name: items2list
     ansible.builtin.debug:
-      msg: "After list::::{{mylist | items2list }}"        
+      msg: "After list::::{{mylist | items2dict }}"        
 
 
 
