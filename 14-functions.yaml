@@ -30,11 +30,11 @@
   hosts: localhost
   become: no
   vars:
-  - numbers: [10,20,30,40,50]
+    numbers: [10,20,5,5,10,20,30,40]
   tasks:
-  - name: "Hello"
+  - name: "Unique numbers"
     ansible.builtin.debug:
-      msg: "{{numbers}}" 
+      msg: "{{numbers | unique}}" 
 
 
 
