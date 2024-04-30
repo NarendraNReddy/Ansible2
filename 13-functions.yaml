@@ -1,0 +1,14 @@
+- name: filters
+  hosts: localhost
+  become: no
+  vars_prompt:
+  - name: number
+    prompt: "Provide the number:"
+    private: no
+
+
+  tasks:
+  - name: check number less than 10
+    ansible.builtin.debug:
+      msg: "Given number is less than 10"
+    when: number < 10   
