@@ -46,6 +46,18 @@
     ansible.builtin.debug:
       msg: "min: {{ages | min }} max: {{ages | max }}"  
 
+- name: list2items
+  hosts: localhost
+  become: no 
+  vars:
+    mydict:
+    - Course: Devops
+    - Training: Siva
+    - Duration: 120hours
+  tasks:
+  - name: print list2item
+    ansible.builtin.debug:
+      msg: "Before the dict:{{mydict}}"  
 
 
 
