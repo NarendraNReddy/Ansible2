@@ -60,7 +60,7 @@
       msg: "Before the dict:{{mydict}}"  
   - name: after item
     ansible.builtin.debug:
-      msg: "After the dict:{{mydict.dict2items}}"    
+      msg: "After the dict:{{mydict | dict2items }}"    
 
 
 
